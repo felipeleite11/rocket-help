@@ -23,5 +23,5 @@ export function Button({ title, ...rest }: Props) {
 			{title}
 		</Heading>
 	</NBButton>
-  );
+  )
 }

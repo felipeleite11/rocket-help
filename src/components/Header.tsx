@@ -21,7 +21,9 @@ export function Header({ title, ...rest }: Props) {
 			justifyContent="space-between"  
 			alignItems="center" 
 			bg="gray.600" 
-			pb={6} pt={12} 
+			pb={4} 
+			pt={12}
+			px={2}
 			{...rest}
 		>
 			<IconButton 

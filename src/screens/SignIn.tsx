@@ -12,8 +12,8 @@ import { useState } from 'react'
 export function SignIn() {
 	const { colors } = useTheme()
 
-	const [email, setEmail] = useState('')
-	const [password, setPassword] = useState('')
+	const [email, setEmail] = useState('felipe@email.com')
+	const [password, setPassword] = useState('123456')
 	const [isLoading, setIsLoading] = useState(false)
 
 	function handleSubmit() {
@@ -57,6 +57,7 @@ export function SignIn() {
 				mb={4}
 				InputLeftElement={<Icon as={<Envelope color={colors.gray[300]} />} ml={4} />}
 				onChangeText={setEmail}
+				defaultValue="felipe@email.com"
 				autoCapitalize="none"
 			/>
 
@@ -64,6 +65,7 @@ export function SignIn() {
 				placeholder="Senha" 
 				InputLeftElement={<Icon as={<Key color={colors.gray[300]} />} ml={4} />}
 				secureTextEntry
+				defaultValue="123456"
 				mb={8}
 				onChangeText={setPassword}
 			/>
